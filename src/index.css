@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@theme {
+  --font-poppins: "Poppins";
+  --font-bilbo: "Bilbo Swash Caps";
+}
+
+body {
+  background-color: #ffffff;
+}
