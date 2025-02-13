@@ -1,26 +1,26 @@
 # UML
 
 ### Class Diagram
-![class diagram](../image/class%20diagram.jpg)
+![class diagram](.image/class%20diagram.jpg)
 
 ### Use Case Diagram
 ![useCase](./image/useCase.jpg)
 
 ### ERD
-![ERD](../fe/image/ERD.jpg)
+![ERD](./image/ERD.jpg)
 
 ---
 
 # Web Detail
 
 ### Header Web
-![header web](../fe/image/header.png)
+![header web](./image/header.png)
 
 ### Product
-![product](../fe/image/product.png)
+![product](./image/product.png)
 
 ### Product Detail
-![productDetail](../fe/image/prodctDetail.png)
+![productDetail](./image/prodctDetail.png)
 
 ### Cart
-![cart](../fe/image/image.png)
+![cart](./image/image.png)
