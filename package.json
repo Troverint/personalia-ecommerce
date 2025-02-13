@@ -2,7 +2,7 @@
   "name": "fe",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://troverint.github.io/ujikom-personalia/",
+  "homepage": "https://troverint.github.io/ujikom-personalia-Pajri/",
   "type": "module",
   "scripts": {
     "predeploy" : "npm run build",
