@@ -1,10 +1,10 @@
 # UML
 
 ### Class Diagram
-![class diagram](../fe/image/class%20diagram.jpg)
+![class diagram](../image/class%20diagram.jpg)
 
 ### Use Case Diagram
-![useCase](../fe/image/useCase.jpg)
+![useCase](../image/useCase.jpg)
 
 ### ERD
 ![ERD](../fe/image/ERD.jpg)
