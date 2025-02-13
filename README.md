@@ -4,7 +4,7 @@
 ![class diagram](../image/class%20diagram.jpg)
 
 ### Use Case Diagram
-![useCase](../image/useCase.jpg)
+![useCase](./image/useCase.jpg)
 
 ### ERD
 ![ERD](../fe/image/ERD.jpg)
