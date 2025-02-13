@@ -1,7 +1,7 @@
 # UML
 
 ### Class Diagram
-![class diagram](.image/class%20diagram.jpg)
+![class diagram](./image/class%20diagram.jpg)
 
 ### Use Case Diagram
 ![useCase](./image/useCase.jpg)
