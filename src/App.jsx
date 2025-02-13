@@ -36,7 +36,7 @@ function LayoutAdmin() {
 
 function App() {
   return (
-    <Router>
+    <Router basename="/personalia-ecommerce/">
       <Routes>
         {/* Rute tanpa Navbar */}
         <Route path="/" element={<Starting />} />
