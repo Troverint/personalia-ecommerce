@@ -1,0 +1,41 @@
+sebuah online shop untuk memesan sesuatu, khusus bagian pakaian
+
+model
+-pembeli
+-toko
+-categori
+-produk
+-cart
+
+relasi
+
+1 pembeli punya 1 cart
+
+1 toko punya banyak product
+
+1 category punya banyak product
+1 product hanya punya 1 category
+
+
+
+
+KATEGORI
+-pakaian
+-jaket
+-celana
+-sepatu
+-aksesoris
+-topi
+
+cart
+-punya siapa
+-produknya apa
+-jumlah per produk berapa
+-harga total
+
+
+product
+pembeli
+review : 
+rating(pembeli)
+ulasan(pembeli)
