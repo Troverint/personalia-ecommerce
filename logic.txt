@@ -1,0 +1,17 @@
+
+
+
+
+current page = default = 1
+customer per page = 10
+
+last customer = currentPage(1) x customer per page(10)
+first customer = last customer - customer per page
+
+last customer = 20
+first customer = 0
+
+total pages = 
+
+
+

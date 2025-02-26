@@ -4,21 +4,20 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
-import f1 from "../../assets/f1.png"
-import f2 from "../../assets/f2.png"
-import f3 from "../../assets/f3.png"
+import f1 from "../../assets/f1.png";
+import f2 from "../../assets/f2.png";
+import f3 from "../../assets/f3.png";
 const slides = [
-
-  { type: "image", value: f1}, // Kotak warna hijau
-  { type: "image", value: f2}, // Kotak warna hijau
-  { type: "image", value: f3}, // Kotak warna hijau
+  { type: "image", value: f1 },
+  { type: "image", value: f2 },
+  { type: "image", value: f3 },
 ];
 
 export default function Geser() {
   return (
     <main className="app w-full flex justify-center rounded-xl mb-7">
       <div className="rounded-xl w-[1170px] flex items-center justify-center">
-        <Carousel autoSlide={true} className="">
+        <Carousel autoSlide={false} className="">
           {slides.map((item, index) => (
             <div
               key={index}

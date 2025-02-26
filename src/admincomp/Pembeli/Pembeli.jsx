@@ -41,6 +41,10 @@ const Pembeli = () => {
   );
   const totalPages = Math.ceil(profile.length / customersPerPage);
 
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+  };
+
   const handleSelectAll = () => {
     if (selectAll) {
       setSelectedItems([]);
@@ -195,7 +199,21 @@ const Pembeli = () => {
                 </tbody>
               </table>
             </div>
-
+            <div className="flex items-end justify-end mt-4">
+              {Array.from({ length: totalPages }, (_, i) => (
+                <button
+                  key={i + 1}
+                  onClick={() => handlePageChange(i + 1)}
+                  className={`mx-1 px-3 py-1 border rounded-md ${
+                    currentPage === i + 1
+                      ? "bg-gray-500 text-white"
+                      : "bg-white"
+                  }`}
+                >
+                  {i + 1}
+                </button>
+              ))}
+            </div>
             {/* Modal Edit */}
             {isModalOpen && (
               <div className="fixed inset-0 flex items-center justify-center bg-black/50">

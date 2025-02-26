@@ -7,7 +7,7 @@ const Register = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [role, setRole] = useState("Pembeli");
+  const [role, setRole] = useState("");
   const navigate = useNavigate();
 
   const handleRegister = async (e) => {
@@ -18,8 +18,9 @@ const Register = () => {
         name,
         email,
         password,
-        role,
+        role
       });
+
       console.log("Register berhasil:", response.data);
 
       alert("Register berhasil!");

@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar";
-import Test from "./components/login/Test";
 import Login from "./components/login/Login";
 import Register from "./components/login/Register";
 import Homepage from "./Homepage";
@@ -14,6 +13,7 @@ import Dashboard from "./admincomp/Dashboard/Dashboard";
 import Pembeli from "./admincomp/Pembeli/Pembeli";
 import Product from "./admincomp/Product/Product";
 import Profile from "./components/Profile";
+import CategoryPage from "./components/content/CategoryPage";
 
 function Layout() {
   return (
@@ -50,6 +50,7 @@ function App() {
           <Route path="product/:id" element={<ProductPage />} />
           <Route path="/user/cart" element={<Cart/>}/>
           <Route path="/user/profile" element={<Profile/>}/>
+          <Route path="/category/:name" element={<CategoryPage/>}/>
         </Route>
           <Route path="/dashboard" element={<Dashboard/>}/>
           <Route path="/admin/pembeli" element={<Pembeli/>}/>

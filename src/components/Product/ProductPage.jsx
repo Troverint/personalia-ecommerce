@@ -8,7 +8,6 @@ import {
   FaRegStar,
   FaPlus,
 } from "react-icons/fa";
-import { CiStar } from "react-icons/ci";
 import { FaMinus } from "react-icons/fa6";
 
 const ProductPage = () => {
@@ -59,7 +58,6 @@ const ProductPage = () => {
     try {
       const token = localStorage.getItem("token");
 
-      // Debug: Periksa data sebelum dikirim
       console.log("Data yang dikirim:", { ProductId: id, quantity, size });
 
       const response = await axios.post(
@@ -78,10 +76,8 @@ const ProductPage = () => {
       console.log("berhasil:", response.data);
       alert("berhasil menambah item ke cart");
     } catch (error) {
-      console.error(
-        "Error saat menambahkan ke cart:",
-        error.response?.data || error
-      );
+      alert(error.response?.data.msg || error);
+     
     }
   };
 

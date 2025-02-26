@@ -6,8 +6,7 @@ import { MdDiscount } from "react-icons/md";
 
 const Cart = () => {
   const [profile, setProfile] = useState([]);
-  const [promoCode, setPromoCode] = useState(""); // State untuk promo code
-  const [loadingCheckout, setLoadingCheckout] = useState(false); // Loading state saat checkout
+  const [loadingCheckout, setLoadingCheckout] = useState(false); 
 
   useEffect(() => {
     const getProfile = async () => {
@@ -56,10 +55,9 @@ const Cart = () => {
 
       await axios.delete("http://localhost:3000/delete/cart", {
         headers: { Authorization: `Bearer ${token}` },
-        data: { ProductId: productId, size }, // Kirim data dalam `data`
+        data: { ProductId: productId, size }, 
       });
 
-      // Filter ulang Carts setelah item dihapus
       setProfile((prevProfile) => ({
         ...prevProfile,
         Carts: prevProfile.Carts.filter(
@@ -78,7 +76,7 @@ const Cart = () => {
     setLoadingCheckout(true);
     try {
       const token = localStorage.getItem("token");
-      console.log("Token yang dipakai:", token); // Debugging token
+      console.log("Token yang dipakai:", token); 
   
       if (!token) {
         alert("Anda belum login!");
@@ -109,10 +107,10 @@ const Cart = () => {
         </div>
         <div className="w-full flex justify-between">
           <div className="w-[47%]">
-            <div className="mt-4 space-y-4">
+            <div className="mt-4 space-y-4 ">
               {profile.Carts?.map((item, index) => (
                 <div key={index} className="border-1 rounded-md p-3">
-                  <div className="flex mb-3 p-3 border-b-1">
+                  <div className="flex p-3 ">
                     <div>
                       <img
                         src={item.Product.image}

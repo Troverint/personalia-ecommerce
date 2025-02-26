@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import logo from "../../assets/logo.png";
-import { Link, useNavigate } from "react-router-dom"; // Import useNavigate
+import { Link, useNavigate } from "react-router-dom"; 
 
 const Login = () => {
   const [email, setEmail] = useState("");

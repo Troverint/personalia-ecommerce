@@ -10,6 +10,9 @@ import {
 
 const Navbar = () => {
   const [profile, setProfile] = useState(null);
+  const [pfp, setPfp] = useState(
+   "" 
+  );
   const token = localStorage.getItem("token");
 
   useEffect(() => {
@@ -24,6 +27,7 @@ const Navbar = () => {
         headers: { Authorization: `Bearer ${token}` },
       });
       setProfile(response.data);
+      setPfp(response.data.pfp || "https://i.pinimg.com/474x/61/2b/5a/612b5a6b17a8ac212aa71513597d3004.jpg");
       console.log(response.data);
     } catch (error) {
       console.error("Error fetching profile:", error);
@@ -63,7 +67,6 @@ const Navbar = () => {
             </form>
           </div>
           <div className="profile flex justify-evenly items-center">
-           
             <div className="flex items-center relative justify-center h-[50px] w-[50px] mr-[-20px]">
               <Link to="/user/cart">
                 <FontAwesomeIcon
@@ -78,9 +81,13 @@ const Navbar = () => {
             {token ? (
               <Link to="/user/profile">
                 <div className="ml-8 flex items-center">
-                {profile?.pfp && (
-  <img src={profile.pfp} alt="Profile" className="h-10 w-10 rounded-full" />
-)}
+                  {pfp && (
+                    <img
+                      src={pfp}
+                      alt="Profile"
+                      className="h-10 w-10 rounded-full"
+                    />
+                  )}
                   <h1 className="font-semibold font-poppins uppercase text-[#000000] ml-2">
                     {profile?.name}
                   </h1>
