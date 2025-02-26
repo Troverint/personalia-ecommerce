@@ -6,11 +6,11 @@
 
 ### Use Case Diagram
 
-![useCase](../fe/image/useCase.jpg)
+![useCase](image/useCase.jpg)
 
 ### ERD
 
-![ERD](../fe/image/ERD.jpg)
+![ERD](image/ERD.jpg)
 
 ---
 
@@ -18,16 +18,16 @@
 
 ### Header Web
 
-![header web](../fe/image/header.png)
+![header web](image/header.png)
 
 ### Product
 
-![product](../fe/image/product.png)
+![product](image/product.png)
 
 ### Product Detail
 
-![productDetail](../fe/image/prodctDetail.png)
+![productDetail](image/prodctDetail.png)
 
 ### Cart
 
-![cart](../fe/image/image.png)
+![cart](image/image.png)
